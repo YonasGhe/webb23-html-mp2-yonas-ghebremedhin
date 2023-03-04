@@ -1,0 +1,167 @@
+body{
+    position: relative;
+    width: auto;
+    background-image:url(https://gastrogate.com/files/32542/sccyn4cv.jpeg) ;
+    background-position: center; 
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.logo{
+    display: none;
+}
+header{
+    margin: auto;
+    padding:0%;
+    background-color: black;
+}
+.nav{
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+.nav a{
+    color: white;
+    margin: 40px;
+    font-size: large;
+}
+.nav a:hover{
+    color: darkorchid;
+}
+h1{
+    text-align: center;
+    background-color: darkslateblue;
+    color:aquamarine;
+    padding: 1rem;
+    margin: auto;
+}
+.container{
+    width: 97.5vw;
+    display: flex;
+    justify-content: center;
+    
+}
+.container > div,.container > img{
+    background-color:bisque;
+    color: black;
+    width:50%;
+    
+}
+div > h2, div > h3, div> p{
+    text-align: center;
+    margin: 1rem;
+    padding: 2%;
+}
+section{
+    margin: 0px;
+    padding: 20px;
+    background-color: beige;
+}
+.boka {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.boka > form, .boka > article{
+    text-align: center;
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+} 
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin: auto;
+}
+.menu{ 
+    grid-template-areas: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: solid darkslateblue;
+    background-color: darkgrey;
+    transition-duration: 500ms;
+}
+.menu:hover{
+    background-color: wheat;
+}
+.menu img{
+    display: block;
+    width: 30%;
+}
+.meny-list{
+    margin-right: 40px;
+
+}
+.menu h4{
+    margin: 5px;
+    
+}
+.menu .pris{
+    float: right;
+    font-weight: bold;
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+}
+.social-media{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+    margin: auto;
+}   
+.social-media > a{ 
+    grid-template-areas:  2;
+    height: 40px;
+    
+}
+.social-media img{
+    max-width: 10%;
+    height: 100%;
+}
+.adress{ 
+    text-align: center;
+}
+address {
+    font-size: large;
+}
+address a{
+    color: white;
+    padding: 0%;
+    margin: 10px;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+address a:hover{
+    background-color: rgb(177, 212, 213);
+}
+span p{
+    text-align: end;
+}
+@media (max-width: 500px){
+    .header img{
+        text-align: center;
+    }
+    .nav{
+        display: block;
+    }
+    nav a{
+        display: block;
+    }
+    .menu{
+        grid-column: 3;
+        margin: 0%;
+}
+.container, .container div, .container img{
+    display: block;
+    width: 100%;
+}
+.boka{
+    display: block;
+}
+}
