@@ -62,6 +62,9 @@ section{
     flex-direction: row-reverse;
     justify-content: center;
 }
+.text p{
+    font-size: 20px;
+}
 .boka > form, .boka > article{
     text-align: center;
     width: 50%;
